@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Overtale a undertale inspired game</title>
+
+    <link rel="stylesheet" href="assets/styles.css" type="text/css" />
+</head>
+
+<body>
+    <div class="form">
+        <main id="game">
+            <script>
+                const main = document.createElement('main');
+                const body = document.createElement('body');
+                const first = document.querySelector('#game');
+                const p = document.createElement('p');
+                document.querySelector('#game').textContent = '';
+                document.querySelector('main').innerHTML = "Years ago there were two races who ruled over earth peacefully. They were the Humans and beings refered to as the acnients."
+                first.appendChild(main);
+                document.onkeydown = function(event) {
+                    if (event.keyCode == '39') {
+                        document.querySelector('main').innerHTML = "They all lived in harmony with each other for thousands of years."
+                        first.appendChild(main);
+
+                        document.onkeydown = function(event) {
+                            if (event.keyCode == '39') {
+                                document.querySelector('main').innerHTML = "After awhile the ancients attacked the humans unprovoked and started an all out war that spanned over the whole earth."
+                                first.appendChild(main);
+
+                                document.onkeydown = function(event) {
+                                    if (event.keyCode == '39') {
+                                        document.querySelector('main').innerHTML = "After a long battle countless cities and towns have been turned to rubble the ancients have won and made the humans withdraw under ground never to be seen again."
+                                        first.appendChild(main);
+
+                                        document.onkeydown = function(event) {
+                                            if (event.keyCode == '39') {
+                                                document.querySelector('main').innerHTML = "Many years later..."
+                                                first.appendChild(main);
+
+                                                document.onkeydown = function(event) {
+                                                    if (event.keyCode == '39') {
+                                                        document.querySelector('main').innerHTML = "Year 2120. You emerge by the city of..."
+                                                        first.appendChild(main);
+
+                                                        document.onkeydown = function(event) {
+                                                            if (event.keyCode == '39') {
+                                                                document.querySelector('main').innerHTML = "Name the hero: "
+                                                                first.appendChild(main);
+                                                                let nameform = document.createElement('INPUT');
+                                                                nameform.setAttribute("type", "text");
+                                                                nameform.id = "frm1";
+                                                                first.appendChild(nameform)
+                                                                let namebutton = document.createElement('INPUT');
+                                                                namebutton.setAttribute("type", "submit");
+                                                                first.appendChild(namebutton);
+                                                                namebutton.addEventListener('click', event => {
+                                                                    newfun()
+                                                                })
+
+                                                                function newfun() {
+                                                                    var x = document.getElementById("frm1");
+                                                                    var text = "";
+                                                                    var i;
+                                                                    for (i = 0; i < x.length; i++) {
+                                                                        text += x.elements[i].value + "<br>";
+                                                                    }
+                                                                    outskirts()
+                                                                }
+
+                                                                function outskirts() {
+                                                                    document.querySelector("main").innerHTML = "Welcome to OverTale" + "&nbsp" + nameform.value;
+                                                                    document.onkeydown = function(event) {
+                                                                        if (event.keyCode == '39') {
+                                                                            document.querySelector('main').innerHTML = "You wake up in what looks like a cave like area and see sunlight at the end of it. You decide to go towards the sunlight because you have never seen sunlight before." +
+                                                                                "&nbsp" + "Before you reach the sunlight you approach what looks like a central room with what looks like one of the ancients sitting in the middle of it. Before you can do anything it notices you and starts to speak to you."
+                                                                            first.appendChild(main);
+
+                                                                            document.onkeydown = function(event) {
+                                                                                if (event.keyCode == '39') {
+                                                                                    document.querySelector('main').innerHTML = "The ancient says Hello" + "&nbsp" + nameform.value + "&nbsp" + "i've been expecting you my name is ... I've been sitting here for ages waiting for you to show up. Do you know why? I don't believe you do" +
+                                                                                        "&nbsp" + "If you do not know why you are here then you must be so confused. Let me explain."
+                                                                                    first.appendChild(main);
+
+                                                                                    document.onkeydown = function(event) {
+                                                                                        if (event.keyCode == '39') {
+                                                                                            document.querySelector('main').innerHTML = "Years ago the ancients ran the humans from above ground and made them go into hiding. The ancients have tried to follow them but only I have actually succeeded but never told the king and queen that I found them." +
+                                                                                                "&nbsp" + "I have been waiting for the day for the one so called prophecy human to come forth and make the humans and ancients be whole again. That is why you are here I presume, but first let me show you the way through what we call the outskirts. Please follow me. (She walks off and you follow her)"
+                                                                                            first.appendChild(main);
+
+                                                                                            document.onkeydown = function(event) {
+                                                                                                if (event.keyCode == '39') {
+                                                                                                    document.body.style.backgroundColor = "#272727";
+                                                                                                    document.querySelector('main').innerHTML = "This place is what everyone calls the outskirts it is the beginning of the habitable area in the above ground. Ever since the war happened the above ground is habitable in various places but this is the most habitable place and also where the king and queen reside. They reside it the Capital which is in the center of the city." +
+                                                                                                        "&nbsp" + "To get to the capital you will have to traverse through the outskirts to even begin seeing the city in view but let's not worry about that let's keep moving forward."
+                                                                                                    first.appendChild(main);
+
+                                                                                                    document.onkeydown = function(event) {
+                                                                                                        if (event.keyCode == '39') {
+                                                                                                            document.querySelector('main').innerHTML = "To make progress in the outskirts you will need to evade detection as best as you can but if you do run into other ancients just talk to them. If you talk to them you can persuade them to let you go." +
+                                                                                                                "&nbsp" + "To help you with this I have set up a practice ancient that you can try and talk to. Please practice talking with the ancient."
+                                                                                                            first.appendChild(main);
+                                                                                                            practice();
+
+                                                                                                            function practice(event) {
+
+                                                                                                                document.onkeydown = function(event) {
+                                                                                                                    if (event.keyCode == '39') {
+                                                                                                                        document.querySelector('main').innerHTML = "You encounter the practice dummy what will you do?"
+                                                                                                                        first.appendChild(main);
+                                                                                                                        talkbutton1 = document.createElement("BUTTON");
+                                                                                                                        talkbutton1.innerHTML = "Talk";
+                                                                                                                        first.appendChild(talkbutton1);
+                                                                                                                        talkbutton1.addEventListener('click', event => {
+                                                                                                                            document.querySelector("main").innerHTML = "You talk with the practice ancient. The practice Ancient doesn't speak back and your guide ancient is pround of you. You won the encounter earning 0 XP and 0 Dollars"
+                                                                                                                            document.onkeydown = function(event) {
+                                                                                                                                if (event.keyCode == '39') {
+                                                                                                                                    document.querySelector('main').innerHTML = "The guide ancient says good job let's keep going."
+                                                                                                                                    first.appendChild(main);
+                                                                                                                                    document.onkeydown = function(event) {
+                                                                                                                                        if (event.keyCode == '39') {
+                                                                                                                                            onward()
+                                                                                                                                        }
+
+                                                                                                                                    }
+                                                                                                                                }
+                                                                                                                            }
+                                                                                                                        })
+
+                                                                                                                        talkbutton2 = document.createElement("BUTTON");
+                                                                                                                        talkbutton2.innerHTML = "Check";
+                                                                                                                        first.appendChild(talkbutton2);
+                                                                                                                        talkbutton2.addEventListener('click', event => {
+                                                                                                                            document.querySelector("main").innerHTML = "A practice Ancient that doesn't have the ability to speak. The guide ancient is pround of you. You won the encounter earning 0 XP and 0 Dollars"
+                                                                                                                            document.onkeydown = function(event) {
+                                                                                                                                if (event.keyCode == '39') {
+                                                                                                                                    document.querySelector('main').innerHTML = "The guide ancient says good job let's keep going."
+                                                                                                                                    first.appendChild(main);
+                                                                                                                                    document.onkeydown = function(event) {
+                                                                                                                                        if (event.keyCode == '39') {
+                                                                                                                                            onward()
+                                                                                                                                        }
+
+                                                                                                                                    }
+                                                                                                                                }
+                                                                                                                            }
+
+                                                                                                                        })
+                                                                                                                        talkbutton3 = document.createElement("BUTTON");
+                                                                                                                        talkbutton3.innerHTML = "Spare";
+                                                                                                                        first.appendChild(talkbutton3);
+                                                                                                                        talkbutton3.addEventListener('click', event => {
+                                                                                                                            document.querySelector("main").innerHTML = "You spare the practice ancient. The practice ancient lets you go. The guide ancient is pround of you. You won the encounter earning 0 XP and 0 Dollars"
+                                                                                                                            document.onkeydown = function(event) {
+                                                                                                                                if (event.keyCode == '39') {
+                                                                                                                                    document.querySelector('main').innerHTML = "The guide ancient says good job let's keep going."
+                                                                                                                                    first.appendChild(main);
+                                                                                                                                    document.onkeydown = function(event) {
+                                                                                                                                        if (event.keyCode == '39') {
+                                                                                                                                            onward()
+                                                                                                                                        }
+
+                                                                                                                                    }
+                                                                                                                                }
+                                                                                                                            }
+
+                                                                                                                        })
+                                                                                                                        talkbutton4 = document.createElement("BUTTON");
+                                                                                                                        talkbutton4.innerHTML = "Fight";
+                                                                                                                        first.appendChild(talkbutton4);
+                                                                                                                        talkbutton4.addEventListener('click', event => {
+                                                                                                                            document.querySelector("main").innerHTML = "You swing at the practice ancient and destroy it in one swipe. The guide ancient is disappointed in you. You won the encounter earning 0 XP and 0 Dollars"
+                                                                                                                            document.onkeydown = function(event) {
+                                                                                                                                if (event.keyCode == '39') {
+                                                                                                                                    document.querySelector('main').innerHTML = "The guide ancient says you don't want to hurt things now do you deary? Let's keep going."
+                                                                                                                                    first.appendChild(main);
+                                                                                                                                    document.onkeydown = function(event) {
+                                                                                                                                        if (event.keyCode == '39') {
+                                                                                                                                            onward()
+
+                                                                                                                                        }
+
+                                                                                                                                    }
+                                                                                                                                }
+                                                                                                                            }
+                                                                                                                        })
+
+                                                                                                                        function onward(event) {
+                                                                                                                            document.querySelector('main').innerHTML = "Test"
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                }
+
+                                                                                                            }
+                                                                                                        }
+
+
+
+                                                                                                    }
+                                                                                                }
+
+                                                                                            }
+                                                                                        }
+                                                                                    }
+
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+            </script>
+    </div>
+    </main>
+    <script src="assets/main.js">
+    </script>
+</body>
+
+</html>

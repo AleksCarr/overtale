@@ -1,0 +1,44 @@
+html {
+    font-size: 1.2em;
+  }
+  
+  body {
+    background: black;
+      color: #fefefe;
+      align-items: center;
+      justify-content: center;
+      line-height: 200%;
+    min-height: 100vh;
+    font-family: Helvetica, Arial, sans-serif;
+    display: block;
+  }
+
+  main{
+    font-size: 2em;
+}
+
+div{
+    width: 900px;
+    font-size: 1em;
+    margin-left: 15%;
+    margin-top: 20%;
+    border-bottom: none;
+}
+
+  h1{
+      display: block;
+  }
+
+  
+  input{
+    background-color: #343434;;
+    outline:none;
+    margin-left: 30%;
+    width: 20%; 
+    color: grey;
+}
+button{
+    margin-left: 15%;
+    background-color: #666262;
+    color: grey;
+}
