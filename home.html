@@ -211,9 +211,25 @@
 
                                                                                                                                                     document.onkeydown = function(event) {
                                                                                                                                                         if (event.keyCode == '39') {
-                                                                                                                                                            document.querySelector('main').innerHTML = "You encountered the skunk. What will you do?"
-                                                                                                                                                            first.appendChild(main);
+                                                                                                                                                            skunk()
+
+                                                                                                                                                            function skunk(event) {
+                                                                                                                                                                document.querySelector('main').innerHTML = "You encounter the skunk what will you do?"
+                                                                                                                                                                first.appendChild(main);
+                                                                                                                                                                skunkbutton1 = document.createElement("BUTTON");
+                                                                                                                                                                skunkbutton1.innerHTML = "check";
+                                                                                                                                                                skunkbutton1.addEventListener('click', event => {
+                                                                                                                                                                    document.querySelector("main").innerHTML = "This ancient looking skunk only wants to be loved."
+                                                                                                                                                                })
+                                                                                                                                                                document.onkeydown = function(event) {
+                                                                                                                                                                    if (event.keyCode == '39') {
+                                                                                                                                                                        skunk()
+
+                                                                                                                                                                    }
+                                                                                                                                                                }
+                                                                                                                                                            }
                                                                                                                                                         }
+
                                                                                                                                                     }
                                                                                                                                                 }
                                                                                                                                             }
