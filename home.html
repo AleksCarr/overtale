@@ -112,6 +112,7 @@
                                                                                                                         first.appendChild(main);
                                                                                                                         talkbutton1 = document.createElement("BUTTON");
                                                                                                                         talkbutton1.innerHTML = "Talk";
+                                                                                                                        talkbutton1.id = "talk1";
                                                                                                                         first.appendChild(talkbutton1);
                                                                                                                         talkbutton1.addEventListener('click', event => {
                                                                                                                             document.querySelector("main").innerHTML = "You talk with the practice Ancient. The practice Ancient doesn’t speak back. The guide Ancient is proud of you. You won the encounter earning 0 XP and 0 Dollars."
@@ -131,6 +132,7 @@
 
                                                                                                                         talkbutton2 = document.createElement("BUTTON");
                                                                                                                         talkbutton2.innerHTML = "Check";
+                                                                                                                        talkbutton2.id = "talk2";
                                                                                                                         first.appendChild(talkbutton2);
                                                                                                                         talkbutton2.addEventListener('click', event => {
                                                                                                                             document.querySelector("main").innerHTML = "A practice Ancient that doesn’t have the ability to do anything. The guide Ancient is proud of you. You won the encounter earning 0 XP and 0 Dollars."
@@ -150,7 +152,7 @@
                                                                                                                         })
                                                                                                                         talkbutton3 = document.createElement("BUTTON");
                                                                                                                         talkbutton3.innerHTML = "Spare";
-                                                                                                                        talkbutton3.id = "button3";
+                                                                                                                        talkbutton3.id = "talk3";
                                                                                                                         first.appendChild(talkbutton3);
                                                                                                                         talkbutton3.addEventListener('click', event => {
                                                                                                                             document.querySelector("main").innerHTML = "You spare the practice Ancient. The guide Ancient is proud of you. You won the encounter earning 0 XP and 0 Dollars."
@@ -171,6 +173,7 @@
                                                                                                                         talkbutton4 = document.createElement("BUTTON");
                                                                                                                         talkbutton4.innerHTML = "Fight";
                                                                                                                         first.appendChild(talkbutton4);
+                                                                                                                        talkbutton4.id = "talk4";
                                                                                                                         talkbutton4.addEventListener('click', event => {
                                                                                                                             document.querySelector("main").innerHTML = "You swing at the practice Ancient and destroy it in one swipe. The guide Ancient is disappointed in you. You won the encounter earning 0 XP and 0 Dollars."
                                                                                                                             document.onkeydown = function(event) {
@@ -217,16 +220,236 @@
                                                                                                                                                                 document.querySelector('main').innerHTML = "You encounter the skunk what will you do?"
                                                                                                                                                                 first.appendChild(main);
                                                                                                                                                                 skunkbutton1 = document.createElement("BUTTON");
-                                                                                                                                                                skunkbutton1.innerHTML = "check";
+                                                                                                                                                                skunkbutton1.innerHTML = "Check";
+                                                                                                                                                                skunkbutton1.id = "skunk1";
+                                                                                                                                                                first.appendChild(skunkbutton1);
                                                                                                                                                                 skunkbutton1.addEventListener('click', event => {
                                                                                                                                                                     document.querySelector("main").innerHTML = "This ancient looking skunk only wants to be loved."
+
+                                                                                                                                                                    document.onkeydown = function(event) {
+                                                                                                                                                                        if (event.keyCode == '39') {
+                                                                                                                                                                            skunk()
+
+                                                                                                                                                                        }
+                                                                                                                                                                    }
                                                                                                                                                                 })
+                                                                                                                                                                skunkbutton2 = document.createElement("BUTTON");
+                                                                                                                                                                skunkbutton2.innerHTML = "Fight";
+                                                                                                                                                                skunkbutton2.id = "skunk2";
+                                                                                                                                                                first.appendChild(skunkbutton2);
+                                                                                                                                                                skunkbutton2.addEventListener('click', event => {
+                                                                                                                                                                    document.querySelector("main").innerHTML = "You swing at the skunk and kill it in one swing. You won, you earned 2 XP and 5 Dollars."
+
+                                                                                                                                                                    document.onkeydown = function(event) {
+                                                                                                                                                                        if (event.keyCode == '39') {
+                                                                                                                                                                            forward()
+
+                                                                                                                                                                        }
+                                                                                                                                                                    }
+                                                                                                                                                                })
+
+                                                                                                                                                                skunkbutton3 = document.createElement("BUTTON");
+                                                                                                                                                                skunkbutton3.innerHTML = "Spare";
+                                                                                                                                                                skunkbutton3.id = "skunk3";
+                                                                                                                                                                first.appendChild(skunkbutton3);
+                                                                                                                                                                skunkbutton3.addEventListener('click', event => {
+                                                                                                                                                                    document.querySelector("main").innerHTML = "You spare the skunk and won 0 XP and 5 Dollars."
+
+                                                                                                                                                                    document.onkeydown = function(event) {
+                                                                                                                                                                        if (event.keyCode == '39') {
+                                                                                                                                                                            forward()
+
+                                                                                                                                                                        }
+                                                                                                                                                                    }
+                                                                                                                                                                })
+
+                                                                                                                                                                skunkbutton4 = document.createElement("BUTTON");
+                                                                                                                                                                skunkbutton4.innerHTML = "Smell";
+                                                                                                                                                                skunkbutton4.id = "skunk4";
+                                                                                                                                                                first.appendChild(skunkbutton4);
+                                                                                                                                                                skunkbutton4.addEventListener('click', event => {
+                                                                                                                                                                    document.querySelector("main").innerHTML = "You try smelling the skunk. He feels special that you would smell him and risk dying just to be nice to him. You won 0 XP and 5 Dollars."
+
+                                                                                                                                                                    document.onkeydown = function(event) {
+                                                                                                                                                                        if (event.keyCode == '39') {
+                                                                                                                                                                            forward()
+
+                                                                                                                                                                        }
+                                                                                                                                                                    }
+                                                                                                                                                                })
+
+                                                                                                                                                                skunkbutton5 = document.createElement("BUTTON");
+                                                                                                                                                                skunkbutton5.innerHTML = "Pet";
+                                                                                                                                                                skunkbutton5.id = "skunk5";
+                                                                                                                                                                first.appendChild(skunkbutton5);
+                                                                                                                                                                skunkbutton5.addEventListener('click', event => {
+                                                                                                                                                                    document.querySelector("main").innerHTML = "You pet the skunk, and the skunk cuddles up next to you and realize you are not trying to hurt it. You won 0 XP and 5 Gold."
+
+                                                                                                                                                                    document.onkeydown = function(event) {
+                                                                                                                                                                        if (event.keyCode == '39') {
+                                                                                                                                                                            forward()
+
+                                                                                                                                                                        }
+                                                                                                                                                                    }
+                                                                                                                                                                })
+
+                                                                                                                                                                skunkbutton6 = document.createElement("BUTTON");
+                                                                                                                                                                skunkbutton6.innerHTML = "Talk";
+                                                                                                                                                                skunkbutton6.id = "skunk6";
+                                                                                                                                                                first.appendChild(skunkbutton6);
+                                                                                                                                                                skunkbutton6.addEventListener('click', event => {
+                                                                                                                                                                    document.querySelector("main").innerHTML = "You try talking with the skunk. You tell it you don’t want to fight and just want to go home. The skunk realizes you are just like him and let’s you go. You won 0 XP and 5 Dollars."
+
+                                                                                                                                                                    document.onkeydown = function(event) {
+                                                                                                                                                                        if (event.keyCode == '39') {
+                                                                                                                                                                            forward()
+
+                                                                                                                                                                        }
+                                                                                                                                                                    }
+                                                                                                                                                                })
+
+
+                                                                                                                                                            }
+
+                                                                                                                                                            function forward(event) {
+                                                                                                                                                                document.querySelector('main').innerHTML = "After dealing with the friendliest and first skunk you have ever seen. You continue forward until you come across a building. You decide to head inside since it is getting dark out and don’t want to see what types of ancients are out there at night." +
+                                                                                                                                                                    "&nbsp" + "You see a bed and decide to sleep in it."
+
                                                                                                                                                                 document.onkeydown = function(event) {
                                                                                                                                                                     if (event.keyCode == '39') {
-                                                                                                                                                                        skunk()
+                                                                                                                                                                        document.querySelector('main').innerHTML = "That saved your progress, and you woke up in the morning."
+                                                                                                                                                                        first.appendChild(main);
+
+                                                                                                                                                                        document.onkeydown = function(event) {
+                                                                                                                                                                            if (event.keyCode == '39') {
+                                                                                                                                                                                document.querySelector('main').innerHTML = "You decide to step out of the building and continue forth but before you can even start you see a baby deer and the baby deer’s mother."
+                                                                                                                                                                                first.appendChild(main);
+
+
+                                                                                                                                                                                document.onkeydown = function(event) {
+                                                                                                                                                                                    if (event.keyCode == '39') {
+                                                                                                                                                                                        deer()
+
+
+
+                                                                                                                                                                                        function deer(event) {
+                                                                                                                                                                                            document.querySelector('main').innerHTML = "You encounter the deer what will you do?"
+                                                                                                                                                                                            first.appendChild(main);
+                                                                                                                                                                                            deerbutton1 = document.createElement("BUTTON");
+                                                                                                                                                                                            deerbutton1.innerHTML = "Check";
+                                                                                                                                                                                            deerbutton1.id = "deer1";
+                                                                                                                                                                                            first.appendChild(deerbutton1);
+                                                                                                                                                                                            deerbutton1.addEventListener('click', event => {
+                                                                                                                                                                                                document.querySelector("main").innerHTML = "A deer with its baby that doesn’t want anything to happen to its baby."
+
+                                                                                                                                                                                                document.onkeydown = function(event) {
+                                                                                                                                                                                                    if (event.keyCode == '39') {
+                                                                                                                                                                                                        deer()
+
+                                                                                                                                                                                                    }
+                                                                                                                                                                                                }
+                                                                                                                                                                                            })
+                                                                                                                                                                                            deerbutton2 = document.createElement("BUTTON");
+                                                                                                                                                                                            deerbutton2.innerHTML = "Spare";
+                                                                                                                                                                                            deerbutton2.id = "deer2";
+                                                                                                                                                                                            first.appendChild(deerbutton2);
+                                                                                                                                                                                            deerbutton2.addEventListener('click', event => {
+                                                                                                                                                                                                    document.querySelector("main").innerHTML = "You try to spare the deer, but nothing happens."
+
+                                                                                                                                                                                                    document.onkeydown = function(event) {
+                                                                                                                                                                                                        if (event.keyCode == '39') {
+                                                                                                                                                                                                            deer()
+
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                    }
+                                                                                                                                                                                                })
+                                                                                                                                                                                                //
+                                                                                                                                                                                                //deerbutton3 = document.createElement("BUTTON");
+                                                                                                                                                                                                //deerbutton3.innerHTML = "Fight";
+                                                                                                                                                                                                //deerbutton3.id = "deer3";
+                                                                                                                                                                                                //first.appendChild(deerbutton3);
+                                                                                                                                                                                                //deerbutton3.addEventListener('click', event => {
+                                                                                                                                                                                                //document.querySelector("main").innerHTML = "You swipe at the deer it, but it doesn’t die it falls to ¼ health. It attacks you and you lose 3 health."
+                                                                                                                                                                                                //
+                                                                                                                                                                                                //document.onkeydown = function(event) {
+                                                                                                                                                                                                //if (event.keyCode == '39') {
+                                                                                                                                                                                                //deer()
+
+                                                                                                                                                                                            //}
+                                                                                                                                                                                            //}
+                                                                                                                                                                                            //})
+
+                                                                                                                                                                                            deerbutton4 = document.createElement("BUTTON");
+                                                                                                                                                                                            deerbutton4.innerHTML = "Take";
+                                                                                                                                                                                            deerbutton4.id = "deer4";
+                                                                                                                                                                                            first.appendChild(deerbutton4);
+                                                                                                                                                                                            deerbutton4.addEventListener('click', event => {
+                                                                                                                                                                                                document.querySelector("main").innerHTML = "You try stealing the deer’s baby. The mother gets mad at you, and you lose 3 health, but the mother deer runs away in fear of you. You won 0 XP and 5 Dollars."
+
+                                                                                                                                                                                                document.onkeydown = function(event) {
+                                                                                                                                                                                                    if (event.keyCode == '39') {
+                                                                                                                                                                                                        forward1()
+
+                                                                                                                                                                                                    }
+                                                                                                                                                                                                }
+                                                                                                                                                                                            })
+
+                                                                                                                                                                                            deerbutton5 = document.createElement("BUTTON");
+                                                                                                                                                                                            deerbutton5.innerHTML = "Pet";
+                                                                                                                                                                                            deerbutton5.id = "deer5";
+                                                                                                                                                                                            first.appendChild(deerbutton5);
+                                                                                                                                                                                            deerbutton5.addEventListener('click', event => {
+                                                                                                                                                                                                document.querySelector("main").innerHTML = "You pet the deer and the baby deer. The mother sees you being friendly and lets you continue petting her child. You won 0 XP and 5 Dollars."
+
+                                                                                                                                                                                                document.onkeydown = function(event) {
+                                                                                                                                                                                                    if (event.keyCode == '39') {
+                                                                                                                                                                                                        forward1()
+
+                                                                                                                                                                                                    }
+                                                                                                                                                                                                }
+                                                                                                                                                                                            })
+
+                                                                                                                                                                                            deerbutton6 = document.createElement("BUTTON");
+                                                                                                                                                                                            deerbutton6.innerHTML = "Talk";
+                                                                                                                                                                                            deerbutton6.id = "deer6";
+                                                                                                                                                                                            first.appendChild(deerbutton6);
+                                                                                                                                                                                            deerbutton6.addEventListener('click', event => {
+                                                                                                                                                                                                document.querySelector("main").innerHTML = "You talk to the mother deer and tell her how cute your baby deer is and to always protect it. The deer doesn’t have words and lets you go. You won 0 XP and 5 Dollars."
+
+                                                                                                                                                                                                document.onkeydown = function(event) {
+                                                                                                                                                                                                    if (event.keyCode == '39') {
+                                                                                                                                                                                                        forward1()
+
+                                                                                                                                                                                                    }
+                                                                                                                                                                                                }
+                                                                                                                                                                                            })
+
+
+
+                                                                                                                                                                                        }
+
+
+                                                                                                                                                                                        function forward1(event) {
+                                                                                                                                                                                            document.querySelector('main').innerHTML = "After the baby deer encounter you are about ½ way there. You continue forward until you see a gorge with a bridge that you need to cross but you see what looks like a sleeping bear in the middle of it." +
+                                                                                                                                                                                                "&nbsp" + "You approach the bear and realize you must do something because there is no way around the bear. You talk to the bear and realize it isn’t asleep, it is only pretending to sleep to try and draw you away. "
+
+                                                                                                                                                                                            document.onkeydown = function(event) {
+                                                                                                                                                                                                if (event.keyCode == '39') {
+                                                                                                                                                                                                    document.querySelector('main').innerHTML = "You tell the bear “I don’t know if you understand me, but I have to get through this way can you please let me through” The bear rolls over so he can see you." +
+                                                                                                                                                                                                        "&nbsp" + "He notices you are a human and pops right up. He says hello there human I am (insert bear name here) I will let you through this area on one condition. You must answer my riddles to make me move ready?"
+                                                                                                                                                                                                    first.appendChild(main);
+
+                                                                                                                                                                                                }
+                                                                                                                                                                                            }
+                                                                                                                                                                                        }
+                                                                                                                                                                                    }
+                                                                                                                                                                                }
+                                                                                                                                                                            }
+                                                                                                                                                                        }
 
                                                                                                                                                                     }
                                                                                                                                                                 }
+
                                                                                                                                                             }
                                                                                                                                                         }
 

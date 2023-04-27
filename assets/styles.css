@@ -37,8 +37,49 @@ input {
     color: grey;
 }
 
-button {
+
+/*button {
     margin-left: 15%;
+    margin-top: 5%;
+    background-color: white;
+    color: black;
+    width: 20%;
+    height: 50px;
+}*/
+
+#talk1,
+#talk2,
+#talk3,
+#talk4 {
+    margin-left: 15%;
+    margin-top: 5%;
+    background-color: white;
+    color: black;
+    width: 20%;
+    height: 50px;
+}
+
+#skunk1,
+#skunk2,
+#skunk3,
+#skunk4,
+#skunk5,
+#skunk6 {
+    margin-left: 10%;
+    margin-top: 5%;
+    background-color: white;
+    color: black;
+    width: 20%;
+    height: 50px;
+}
+
+#deer1,
+#deer2,
+#deer3,
+#deer4,
+#deer5,
+#deer6 {
+    margin-left: 10%;
     margin-top: 5%;
     background-color: white;
     color: black;
