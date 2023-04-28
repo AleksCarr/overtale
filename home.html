@@ -648,6 +648,39 @@
 
                                                                                                                                                                                             document.querySelector('main').innerHTML = "I’m able to turn my head around 270 degrees and I’m noted to be quiet in a fight. What am I?"
                                                                                                                                                                                             first.appendChild(main);
+                                                                                                                                                                                            let riddleform3 = document.createElement('INPUT');
+                                                                                                                                                                                            riddleform3.setAttribute("type", "text");
+                                                                                                                                                                                            riddleform3.id = 'riddleform3';
+                                                                                                                                                                                            first.appendChild(riddleform3)
+                                                                                                                                                                                            document.getElementById('riddleform3').required = true;
+                                                                                                                                                                                            let riddlebutton3 = document.createElement('INPUT');
+                                                                                                                                                                                            riddlebutton3.setAttribute("type", "submit");
+                                                                                                                                                                                            first.appendChild(riddlebutton3);
+                                                                                                                                                                                            riddlebutton3.addEventListener('click', event => {
+                                                                                                                                                                                                if (riddleform3.value == "owl") {
+                                                                                                                                                                                                    document.querySelector('main').innerHTML = "Damn you really are smart, okay you are free to pass but please be careful you could be the future of humans and ancient kind. Bye now!!!"
+                                                                                                                                                                                                    document.onkeydown = function(event) {
+                                                                                                                                                                                                        if (event.keyCode == '39') {
+                                                                                                                                                                                                            end()
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                } else if (riddleform3.value.length == 0) {
+                                                                                                                                                                                                    document.querySelector('main').innerHTML = "You don't answer. The bear says you have to answer to progress. Please don't make this harder than it should be."
+                                                                                                                                                                                                    document.onkeydown = function(event) {
+                                                                                                                                                                                                        if (event.keyCode == '39') {
+                                                                                                                                                                                                            riddle3()
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                    }
+                                                                                                                                                                                                } else if (riddleform3.value.length >= 1 && riddleform3.value != "owl") {
+                                                                                                                                                                                                    document.querySelector('main').innerHTML = "No that's not it. Please try again"
+                                                                                                                                                                                                    document.onkeydown = function(event) {
+                                                                                                                                                                                                        if (event.keyCode == '39') {
+                                                                                                                                                                                                            riddle3()
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                    }
+                                                                                                                                                                                                }
+                                                                                                                                                                                            })
                                                                                                                                                                                         }
                                                                                                                                                                                     }
                                                                                                                                                                                 }
@@ -669,8 +702,8 @@
                                                                                                                 }
                                                                                                             }
                                                                                                         }
-
                                                                                                     }
+
                                                                                                 }
                                                                                             }
                                                                                         }
