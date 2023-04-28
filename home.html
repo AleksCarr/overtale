@@ -58,7 +58,12 @@
                                                                 namebutton.setAttribute("type", "submit");
                                                                 first.appendChild(namebutton);
                                                                 namebutton.addEventListener('click', event => {
-                                                                    newfun()
+
+                                                                    if (nameform.value.length == 0) {
+                                                                        alert("Please provied a name")
+                                                                    } else if (nameform.value.length >= 1) {
+                                                                        newfun()
+                                                                    }
                                                                 })
 
                                                                 function newfun() {
@@ -535,6 +540,69 @@
                                                                                                                                                                                                         "&nbsp" + "He notices you are a human and pops right up. He says hello there human I am (insert bear name here) I will let you through this area on one condition. You must answer my riddles to make me move ready?"
                                                                                                                                                                                                     first.appendChild(main);
 
+                                                                                                                                                                                                    document.onkeydown = function(event) {
+                                                                                                                                                                                                        if (event.keyCode == '39') {
+                                                                                                                                                                                                            document.querySelector('main').innerHTML = "The first two are easy while the last is hard. Here we go:"
+                                                                                                                                                                                                            first.appendChild(main);
+
+                                                                                                                                                                                                            document.onkeydown = function(event) {
+                                                                                                                                                                                                                if (event.keyCode == '39') {
+                                                                                                                                                                                                                    riddle()
+                                                                                                                                                                                                                }
+                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                }
+                                                                                                                                                                                            }
+                                                                                                                                                                                        }
+
+                                                                                                                                                                                        function riddle() {
+                                                                                                                                                                                            document.querySelector('main').innerHTML = "It takes me two weeks to digest food, but then again, I’m not noted for being fast. What am I?"
+                                                                                                                                                                                            let riddleform = document.createElement('INPUT');
+                                                                                                                                                                                            riddleform.setAttribute("type", "text");
+                                                                                                                                                                                            riddleform.id = 'riddleform1';
+                                                                                                                                                                                            first.appendChild(riddleform)
+                                                                                                                                                                                            document.getElementById('riddleform1').required = true;
+                                                                                                                                                                                            let riddlebutton = document.createElement('INPUT');
+                                                                                                                                                                                            riddlebutton.setAttribute("type", "submit");
+                                                                                                                                                                                            first.appendChild(riddlebutton);
+                                                                                                                                                                                            riddlebutton.addEventListener('click', event => {
+                                                                                                                                                                                                if (riddleform.value == "sloth") {
+                                                                                                                                                                                                    riddle2()
+                                                                                                                                                                                                } else if (riddleform.value.length == 0) {
+                                                                                                                                                                                                    document.querySelector('main').innerHTML = "You don't answer. The bear says you have to answer to progress. Please don't make this harder than it should be."
+                                                                                                                                                                                                    document.onkeydown = function(event) {
+                                                                                                                                                                                                        if (event.keyCode == '39') {
+                                                                                                                                                                                                            riddle()
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                    }
+                                                                                                                                                                                                } else if (riddleform.value.length >= 1 && riddleform.value != "sloth") {
+                                                                                                                                                                                                    document.querySelector('main').innerHTML = "No that's not it. Please try again"
+                                                                                                                                                                                                    document.onkeydown = function(event) {
+                                                                                                                                                                                                        if (event.keyCode == '39') {
+                                                                                                                                                                                                            riddle()
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                    }
+                                                                                                                                                                                                }
+                                                                                                                                                                                            })
+                                                                                                                                                                                        }
+
+
+
+
+
+
+
+
+
+                                                                                                                                                                                        function riddle2() {
+                                                                                                                                                                                            document.querySelector('main').innerHTML = "Here is the next one: "
+                                                                                                                                                                                            document.onkeydown = function(event) {
+                                                                                                                                                                                                if (event.keyCode == '39') {
+                                                                                                                                                                                                    document.querySelector('main').innerHTML = "The alphabet goes from A to Z, but I go from Z to A what am I?"
+                                                                                                                                                                                                    first.appendChild(main);
                                                                                                                                                                                                 }
                                                                                                                                                                                             }
                                                                                                                                                                                         }
@@ -542,13 +610,10 @@
                                                                                                                                                                                 }
                                                                                                                                                                             }
                                                                                                                                                                         }
-
                                                                                                                                                                     }
                                                                                                                                                                 }
-
                                                                                                                                                             }
                                                                                                                                                         }
-
                                                                                                                                                     }
                                                                                                                                                 }
                                                                                                                                             }
@@ -562,22 +627,16 @@
 
                                                                                                             }
                                                                                                         }
-
-
-
                                                                                                     }
                                                                                                 }
-
                                                                                             }
                                                                                         }
                                                                                     }
-
                                                                                 }
                                                                             }
                                                                         }
                                                                     }
                                                                 }
-
                                                             }
                                                         }
                                                     }
