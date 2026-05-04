@@ -5,16 +5,17 @@ html {
 body {
     background: black;
     color: #fefefe;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     line-height: 200%;
-    min-height: 100vh;
+    
     font-family: Helvetica, Arial, sans-serif;
-    display: block;
+    display: flex;
 }
 
 main {
     font-size: 2em;
+    
 }
 
 div {
@@ -81,6 +82,18 @@ input {
 #deer6,
 #deer7 {
     margin-left: 10%;
+    margin-top: 5%;
+    background-color: white;
+    color: black;
+    width: 20%;
+    height: 50px;
+}
+
+#room1,
+#room2,
+#room3,
+#room4{
+    margin-left: 15%;
     margin-top: 5%;
     background-color: white;
     color: black;
