@@ -827,7 +827,11 @@
                                                     first.appendChild(roombutton4);
                                                     roombutton4.addEventListener('click', event => {
                                                         document.querySelector('main').innerHTML = "You hop in bed and sleep for several hours before getting abrubtly woken up by "
+                                                        document.onkeydown = function (event) {
+                                                            if (event.keyCode == '39') {
                                                         castleend();
+                                                            }
+                                                        }
 
                                                     })
                                                 }
@@ -880,9 +884,17 @@
                                                     first.appendChild(roombutton4);
                                                     roombutton4.addEventListener('click', event => {
                                                         document.querySelector('main').innerHTML = "You hop in bed and sleep for several hours before getting abrubtly woken up by "
+                                                        document.onkeydown = function (event) {
+                                                            if (event.keyCode == '39') {
                                                         castleend();
-
+                                                            }
+                                                        }
                                                     })
+                                                }
+
+                                                function castleend() {
+                                                    document.querySelector('main').innerHTML = "you go out into the corridor"
+                                                    first.appendChild(main);
                                                 }
                                             }
 
