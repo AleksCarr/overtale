@@ -662,14 +662,12 @@
 
 
                                                 function riddle2() {
-
-
                                                     document.querySelector('main').innerHTML = "The alphabet goes from A to Z, but I go from Z to A what am I?"
-
-                                                    let riddleform2 = document.createElement('INPUT');
-                                                    riddleform2.setAttribute("type", "text");
-                                                    riddleform2.id = 'riddleform2';
-                                                    first.appendChild(riddleform2)
+                                                    first.appendChild(main)
+                                                    let riddleform = document.createElement('INPUT');
+                                                    riddleform.setAttribute("type", "text");
+                                                    riddleform.id = 'riddleform2';
+                                                    first.appendChild(riddleform)
                                                     document.getElementById('riddleform2').required = true;
                                                     let riddlebutton2 = document.createElement('INPUT');
                                                     riddlebutton2.setAttribute("type", "submit");
