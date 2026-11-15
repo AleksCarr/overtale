@@ -663,15 +663,15 @@
 
                                                 function riddle2() {
                                                     document.querySelector('main').innerHTML = "The alphabet goes from A to Z, but I go from Z to A what am I?"
-                                                    let riddleform = document.createElement('INPUT');
-                                                    riddleform.setAttribute("type", "text");
-                                                    riddleform.id = 'riddleform2';
+                                                    let riddleform2 = document.createElement('INPUT');
+                                                    riddleform2.setAttribute("type", "text");
+                                                    riddleform2.id = 'riddleform2';
                                                     first.appendChild(riddleform)
                                                     document.getElementById('riddleform2').required = true;
-                                                    let riddlebutton = document.createElement('INPUT');
-                                                    riddlebutton.setAttribute("type", "submit");
-                                                    first.appendChild(riddlebutton);
-                                                    riddlebutton.addEventListener('click', event => {
+                                                    let riddlebutton2 = document.createElement('INPUT');
+                                                    riddlebutton2.setAttribute("type", "submit");
+                                                    first.appendChild(riddlebutton2);
+                                                    riddlebutton2.addEventListener('click', event => {
                                                         if (riddleform2.value == "zebra") {
                                                             document.querySelector('main').innerHTML = "Damn you are smart here is your final and most difficult riddle:"
                                                             document.onkeydown = function (event) {
