@@ -100,3 +100,19 @@ input {
     width: 20%;
     height: 50px;
 }
+
+#servant1,
+#servant2,
+#servant3,
+#servant4,
+#servant5,
+#servant6,
+#servant7
+{
+    margin-left: 15%;
+    margin-top: 5%;
+    background-color: white;
+    color: black;
+    width: 20%;
+    height: 50px;
+}
