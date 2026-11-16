@@ -1150,17 +1150,17 @@
                                                         "&nbsp" + "“Only time will tell. I will let you go for now, but know this i'll be back and we will see if you still carry the same tenacity as you do right now” They disappear into nothingness. You exit the corridor"
                                                     document.onkeydown = function (event) {
                                                                 if (event.keyCode == '39') {
-                                                        Overtale()
+                                                         snowy()
                                                 }
                                             }
                                         }
-                                                function Overtale() {
-                                                        document.main.style.fontSize = '5em';
-                                                        document.main.style.alignItems = 'center';
+                                        function snowy(){
+                                             document.body.style.backgroundImage = "url('https://www.istockphoto.com/photo/scenic-winter-landscape-with-snow-covered-trees-in-the-woods-gm1910151889-554747842)"
+                            document.body.style.backgroundSize = "100% 100%";
+                            document.querySelector('main').innerHTML = "You exit the corridor and enter a snowy area with trees all around you. You keep going forward before coming to a split in the road."
+                                        }
 
-                                                    document.querySelector('main').innerHTML = "OVERTALE"
-
-                                                }
+                                                
 
                                             }
                                         }
