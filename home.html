@@ -944,7 +944,7 @@
                                                     document.onkeydown = function (event) {
                                                         if (event.keyCode == '39') {
                                                             servantbutton1 = document.createElement("BUTTON");
-                                                            servantbutton1.innerHTML = "talk";
+                                                            servantbutton1.innerHTML = "Talk";
                                                             servantbutton1.id = "servant1";
                                                             first.appendChild(servantbutton1);
                                                             servantbutton1.addEventListener('click', event => {
@@ -958,7 +958,7 @@
                                                         }
                                                     }
                                                             servantbutton2 = document.createElement("BUTTON");
-                                                            servantbutton2.innerHTML = "run";
+                                                            servantbutton2.innerHTML = "Run";
                                                             servantbutton2.id = "servant2";
                                                             first.appendChild(servantbutton2);
                                                             servantbutton2.addEventListener('click', event => {
@@ -989,7 +989,7 @@
                                                     document.querySelector('main').innerHTML = "What is your next move?"
                                                     first.appendChild(main);
                                                     servantbutton5 = document.createElement("BUTTON");
-                                                    servantbutton5.innerHTML = "talk";
+                                                    servantbutton5.innerHTML = "Talk";
                                                     servantbutton5.id = "servant5";
                                                     first.appendChild(servantbutton5);
                                                     servantbutton5.addEventListener('click', event => {
@@ -1005,18 +1005,6 @@
                                                 function servant2() {
                                                     document.querySelector('main').innerHTML = "What is your next move?"
                                                     first.appendChild(main);
-                                                    servantbutton2 = document.createElement("BUTTON");
-                                                    servantbutton2.innerHTML = "run";
-                                                    servantbutton2.id = "servant2";
-                                                    first.appendChild(servantbutton2);
-                                                    servantbutton2.addEventListener('click', event => {
-                                                        document.querySelector('main').innerHTML = "You try and run but they won't budge and they say “Either face me head on or you won't last a second in this world”"
-                                                        document.onkeydown = function (event) {
-                                                            if (event.keyCode == '39') {
-                                                                servant2()
-                                                            }
-                                                        }
-                                                    })
                                                     servantbutton4 = document.createElement("BUTTON");
                                                     servantbutton4.innerHTML = "Help";
                                                     servantbutton4.id = "servant4";
@@ -1029,6 +1017,8 @@
                                                             }
                                                         }
                                                     })
+                                                    
+                                                    
                                                     servantbutton3 = document.createElement("BUTTON");
                                                     servantbutton3.innerHTML = "Flirt";
                                                     servantbutton3.id = "servant4";
@@ -1041,6 +1031,18 @@
                                                             }
                                                         }
                                                     })
+                                                    servantbutton2 = document.createElement("BUTTON");
+                                                            servantbutton2.innerHTML = "Run";
+                                                            servantbutton2.id = "servant2";
+                                                            first.appendChild(servantbutton2);
+                                                            servantbutton2.addEventListener('click', event => {
+                                                                document.querySelector('main').innerHTML = "You try and run but they won't budge and they say “Either face me head on or you won't last a second in this world”"
+                                                                document.onkeydown = function (event) {
+                                                                    if (event.keyCode == '39') {
+                                                                        servant2()
+                                                                    }
+                                                                }
+                                                            })
 
                                                 }
                                                 function servanthelp1() {
@@ -1069,7 +1071,7 @@
                                                         }
                                                     })
                                                     servantbutton2 = document.createElement("BUTTON");
-                                                    servantbutton2.innerHTML = "run";
+                                                    servantbutton2.innerHTML = "Run";
                                                     servantbutton2.id = "servant2";
                                                     first.appendChild(servantbutton2);
                                                     servantbutton2.addEventListener('click', event => {
