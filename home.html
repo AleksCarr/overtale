@@ -1148,8 +1148,12 @@
                                                     document.querySelector('main').innerHTML = "You keep going through the corridor before you see something in the middle of a rock pile. You approach them and they say “So you managed to make it here without any trouble ehh? HAHAHAHAHA.”" +
                                                         "&nbsp" + "“You thought it was simple didn't you? Thinking it's just a simple game of just going forward trying to reach the end goal? HAHAHAHA Do you still think this is simple? Will you be able to reach Dess without causing anymore chaos? Or will you go into the darkness like we all know humans belong in?”" +
                                                         "&nbsp" + "“Only time will tell. I will let you go for now, but know this i'll be back and we will see if you still carry the same tenacity as you do right now” They disappear into nothingness. You exit the corridor"
-                                                    Overtale()
+                                                    document.onkeydown = function (event) {
+                                                                if (event.keyCode == '39') {
+                                                        Overtale()
                                                 }
+                                            }
+                                        }
                                                 function Overtale() {
                                                         main.style.fontSize = '5em'
                                                     
